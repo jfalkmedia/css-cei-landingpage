@@ -10,6 +10,9 @@ h1, h2, h3{
 	font-weight: 200;
 	font-family: 'PT Serif Caption', serif;
 }
+.products h3{
+	font-size: 1.3em;
+}
 
 .smh2{
 	font-size: 23px;
@@ -18,9 +21,14 @@ h1, h2, h3{
 .btn{
 	font-size: 1.2em;
 }
+.smfont{
+	font-size: 0.9em;
+}
+
 
 /* COLORS
 ========================= */
+
 
 footer,
 .footer-nav li a,
@@ -72,7 +80,23 @@ footer {
 	box-shadow: 0 1px 50px rgba(255,255,255,0.4);
 }
 
+.sidebar{
+    background-color: #fafafa;
+    border-top: 20px solid rgba(16,130,121,0.8);
+}
 
+.sidebar .btn-default{
+	background-color: rgba(35,63,135,0);
+	border: 1px solid #233f87;
+	color: #233f87;	
+	transition: all 0.3s ease;
+}
+
+.sidebar .btn-default:hover{
+	background-color: #233f87;
+	color: #fff;
+
+}
 
 /* LAYOUT
 ========================= */
@@ -81,9 +105,6 @@ body{
 	padding-top: 150px;
 
 }
-
-
-
 
 .no-gutter {
 	padding-left: 0 !important;
@@ -118,6 +139,10 @@ body{
 .contact-block,
 .costs h2{
 	text-align: center;
+}
+
+.full-event-info{
+	text-align: left;
 }
 
 .testimonials-block{
@@ -247,6 +272,10 @@ body{
 
 }
 
+.event-buttons a{
+	margin-right: 20px;
+}
+
 footer{
 	text-align: center;
 	padding: 25px 0;
@@ -311,6 +340,13 @@ footer{
 	height:100%;
 	min-height: 500px;
 
+}
+.jumbotron-header{
+	background: url('../img/jumbotron-bg2.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	height:100%;
+	min-height: 200px;	
 } 
 /* .jumbotron{
 	background: url('../img/jumbotron-bg2.jpg') no-repeat;
@@ -326,18 +362,27 @@ footer{
     position: relative;
     top: 245px;
 }
+
+
 .jumbotron h1{
 	color: #fff;
 	line-height: 1.5em;
 	text-align: right;
 	font-size: 45px;
-
 }
-.jumbotron h1 span.jumbo-title{
+
+.jumbotron-header h1{
+	color: #fff;
+	line-height: 1.5em;
+	text-align: right;
+	font-size: 35px;
+}
+
+.jumbotron h1 span.jumbo-title, .jumbotron-header h1 span.jumbo-title{
 	background-color: rgba(29,124,113,0.8);
 	padding: 0 40px 5px 30px;
 }
-.jumbotron h1 span.jumbo-subtitle{
+.jumbotron h1 span.jumbo-subtitle, .jumbotron-header h1 span.jumbo-subtitle{
 	background-color: rgba(35,63,135,0.8);
 	padding: 0 40px 5px 30px;	
 }
@@ -391,9 +436,6 @@ footer{
 	min-height: 35px;
 	font-weight: 600;
 	font-size: 1.2em;
-}
-.reginfo{
-	background: #efefef;
 }
 
 

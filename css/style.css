@@ -41,7 +41,7 @@ footer {
 	background-color: #122147;
 }
 
-.contact-block, .css-info-block{
+.contact-block, .css-info-block, .org-info-block{
 	background-color: #233f87;
 	color: #FFF;
 }
@@ -82,7 +82,9 @@ footer {
 
 .sidebar{
     background-color: #fafafa;
+    border: 1px solid #efefef;
     border-top: 20px solid rgba(16,130,121,0.8);
+    border-radius: 5px;
 }
 
 .sidebar .btn-default{
@@ -97,6 +99,18 @@ footer {
 	color: #fff;
 
 }
+
+
+/* UTILITIES
+========================= */
+
+a.anchor{
+display: block;
+position: relative;
+top: -150px;
+
+}
+
 
 /* LAYOUT
 ========================= */
@@ -253,14 +267,19 @@ body{
 	list-style: none;
 	padding: 0;
 	margin-left: 0;
-
-
 }
 
 .dates li{
 	display: inline-block;
 	margin-right: 30px;
 }
+
+.event-page .dates li{
+	margin-top: 20px;
+	font-size: 14px;	
+}
+
+
 
 .dates li::before{
 	content: " ";
@@ -272,8 +291,36 @@ body{
 
 }
 
+ span.date{
+	font-size: 1.3em;
+}
+
 .event-buttons a{
 	margin-right: 20px;
+}
+
+.location-info{
+	background-color: #fafafa;
+	background: url('../img/box-bg.png');
+}
+
+.location-info .dates li::before{
+	content: " ";
+	background: url('../img/blue-calendar.png') no-repeat left top;    
+	height: 100%;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	vertical-align: 23%;
+
+}
+
+.org-info-block{
+	text-align: left;
+	padding-top: 30px;
+}
+
+.org-info-block .cei-info{
+	border-left: 1px dotted rgba(255,255,255,0.3);
 }
 
 footer{

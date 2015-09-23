@@ -319,9 +319,7 @@ body{
 	padding-top: 30px;
 }
 
-.org-info-block .cei-info{
-	border-left: 1px dotted rgba(255,255,255,0.3);
-}
+
 
 footer{
 	text-align: center;
@@ -524,8 +522,22 @@ input[type="submit"]:hover, .css-info-block .btn-default{
 /* Media Queries
 ========================== */
 
-@media (min-width: 768px){}
+@media (min-width: 768px){
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
 		margin-left: 0;
+	}
+	
+}
+@media (min-width: 995px){
+	.org-info-block .cei-info{
+		border-left: 1px dotted rgba(255,255,255,0.3);
+	}
+}
+
+@media (max-width: 467px){
+	.btn-default{
+		font-size: 0.9em !important;
+		padding: 4px;
+		margin: 4px;
 	}
 }

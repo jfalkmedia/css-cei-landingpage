@@ -13,6 +13,9 @@ h1, h2, h3{
 .products h3{
 	font-size: 1.3em;
 }
+.products li{
+	font-size: 0.9em;
+}
 
 .smh2{
 	font-size: 23px;
@@ -32,13 +35,18 @@ h1, h2, h3{
 
 footer,
 .footer-nav li a,
-.footer-nav a {
+.footer-nav a, 
+footer a {
 	color: rgba(255,255,255,0.9);
 }
 
 
 footer {
 	background-color: #122147;
+}
+
+footer a:hover{
+	color: rgb(255,255,255);
 }
 
 .contact-block, .css-info-block, .org-info-block{
@@ -74,7 +82,18 @@ footer {
 	border: 1px solid #FFF;
 	transition: all 0.3s ease;
 }
+.location-info .btn-default{
+	background-color: #233f87;
+	color: #FFF;
+	border: 1px solid #FFF;
+	transition: all 0.3s ease;
+}
+.location-info .btn-default:hover{
+	background-color: rgba(255,255,255,0.1);
+	border: 1px solid #233f87;
+	color: #233f87;
 
+}
 .info-block img{
 	border: 3px solid #FFF;
 	box-shadow: 0 1px 50px rgba(255,255,255,0.4);
@@ -263,6 +282,39 @@ body{
 
 } 
 
+.past-events h2{
+    color: #243E86;
+    text-align: center;
+    border-bottom: 3px solid #16847B;
+    margin-bottom: 0;
+    padding-bottom: 20px;	
+}
+
+.event-page .dates li{
+	margin-top: 20px;
+	font-size: 14px;	
+}
+
+li.dates::before{
+	content: " ";
+	background: url('../img/calendar-icon.png') no-repeat left top;    
+	height: 100%;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	vertical-align: 84%;
+
+}
+
+.dates li::before{
+	content: " ";
+	background: url('../img/calendar-icon.png') no-repeat left top;    
+	height: 100%;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	vertical-align: 23%;
+
+} 
+
 .dates{
 	list-style: none;
 	padding: 0;
@@ -274,26 +326,22 @@ body{
 	margin-right: 30px;
 }
 
-.event-page .dates li{
-	margin-top: 20px;
-	font-size: 14px;	
-}
 
-
-
-.dates li::before{
-	content: " ";
-	background: url('../img/calendar-icon.png') no-repeat left top;    
-	height: 100%;
-	padding-bottom: 40px;
-	padding-left: 40px;
-	vertical-align: 23%;
-
-}
 
  span.date{
 	font-size: 1.3em;
 }
+ul.date-list{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.date-list li{
+	display: inline-block;
+
+}
+.date-list li:nth-child(3){
+	margin-left:20px;
+} 
 
 .event-buttons a{
 	margin-right: 20px;
@@ -302,6 +350,7 @@ body{
 .location-info{
 	background-color: #fafafa;
 	background: url('../img/box-bg.png');
+	padding-bottom: 20px;
 }
 
 .location-info .dates li::before{
@@ -439,7 +488,7 @@ footer{
 .main-logo {
 	width: 235px;
 	height: 140px;
-	text-indent: 100%;
+	text-indent: 110%;
 	white-space: nowrap;
 	overflow: hidden;
 	background: url('../img/css-logo.png') no-repeat;
@@ -449,7 +498,7 @@ footer{
 .second-logo {
 	width: 235px;
 	height: 140px;
-	text-indent: 100%;
+	text-indent: 110%;
 	white-space: nowrap;
 	overflow: hidden;
 	background: url('../img/cei-logo.png') no-repeat;
@@ -539,5 +588,8 @@ input[type="submit"]:hover, .css-info-block .btn-default{
 		font-size: 0.9em !important;
 		padding: 4px;
 		margin: 4px;
+	}
+	.date-list{
+		font-size: 0.8em;
 	}
 }

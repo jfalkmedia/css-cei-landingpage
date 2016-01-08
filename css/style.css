@@ -369,7 +369,10 @@ ul.date-list{
 	padding-top: 30px;
 }
 
-
+.datechange{
+	font-style: italic;
+	font-size: 0.8em;
+}
 
 footer{
 	text-align: center;

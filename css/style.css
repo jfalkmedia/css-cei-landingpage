@@ -1,5 +1,6 @@
 /* TYPOGRAPHY
 ========================= */
+@import url(https://fonts.googleapis.com/css?family=Arizonia);
 
 body{
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -379,6 +380,39 @@ footer{
 	padding: 25px 0;
 }
 
+.testimonials{
+	background: url('../img/box-bg.png') #efefef;	
+}
+
+q{
+	font-style: italic;
+}
+
+.quote::before, .quote::after{
+    font-family: 'Arizonia', cursive;
+    font-size: 11em;
+    font-weight: 500;
+	font-style: normal;    
+    color: rgba(35, 63, 135, .7);
+    line-height: 0;
+    position: absolute;	
+}
+
+.quote::before {
+	content: open-quote;
+    top: 125px;
+    left: -50px;
+}
+.quote::after {
+	content: close-quote;
+    top: 130px;
+    right: -45px;
+}
+
+.padding50{
+	padding: 0 50px;
+}
+
 /* NAVBAR
 ========================= */
 
@@ -579,6 +613,7 @@ input[type="submit"]:hover, .css-info-block .btn-default{
 	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
 		margin-left: 0;
 	}
+
 	
 }
 @media (min-width: 995px){
@@ -586,7 +621,21 @@ input[type="submit"]:hover, .css-info-block .btn-default{
 		border-left: 1px dotted rgba(255,255,255,0.3);
 	}
 }
-
+@media (min-width: 468px) and (max-width:768px){
+	.quote::before, .quote::after{
+		font-size: 9em;
+	}
+	.quote::before {
+		content: open-quote;
+	    top: 90px;
+	    left: 0px;
+	}
+	.quote::after {
+		content: close-quote;
+	    top: 90px;
+	    right: -10px;
+	}		
+}
 @media (max-width: 467px){
 	.btn-default{
 		font-size: 0.9em !important;
@@ -596,4 +645,17 @@ input[type="submit"]:hover, .css-info-block .btn-default{
 	.date-list{
 		font-size: 0.8em;
 	}
+	.quote::before, .quote::after{
+		font-size: 9em;
+	}
+	.quote::before {
+		content: open-quote;
+	    top: 90px;
+	    left: -10px;
+	}
+	.quote::after {
+		content: close-quote;
+	    top: 90px;
+	    right: -10px;
+	}			
 }

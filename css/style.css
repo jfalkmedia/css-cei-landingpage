@@ -28,7 +28,10 @@ h1, h2, h3{
 .smfont{
 	font-size: 0.9em;
 }
-
+iframe{
+	max-width: 100%;
+	border: none;
+}
 
 /* COLORS
 ========================= */
@@ -268,6 +271,11 @@ body{
     overflow: hidden;
 
 } 
+.special-bg{
+    position: relative;
+    background: rgba(0,152,153,0.8);
+    overflow: hidden;	
+}
 
 .shop-bg::after{
 	content: " ";
@@ -637,10 +645,13 @@ input[type="submit"]:hover, .css-info-block .btn-default{
 	}		
 }
 @media (max-width: 467px){
+	.special-bg a.btn-default{
+
+	}
 	.btn-default{
 		font-size: 0.9em !important;
-		padding: 4px;
-		margin: 4px;
+		padding: 10px;
+		margin: 4px 0;
 	}
 	.date-list{
 		font-size: 0.8em;
